@@ -1,4 +1,5 @@
 import ejemplo
+import frutasOmarSalgado
 import unittest
 
 
@@ -15,6 +16,12 @@ class Test_ejemplo_suma (unittest.TestCase):
         self.assertEqual(result,10)
 
 # Despues de este mensaje ustedes deben integrar sus casos de prueba
+
+class TestOmarSalgado (unittest.TestCase):
+    #Escribimos un metodo:
+    def testFrutas (self):
+        result= frutasOmarSalgado.frutas('manzana')
+        self.assertEqual(result,1)
 
 
 

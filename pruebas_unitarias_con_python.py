@@ -1,5 +1,6 @@
 import ejemplo
 import frutasOmarSalgado
+import ManuelBuritica
 import unittest
 
 
@@ -23,7 +24,11 @@ class TestOmarSalgado (unittest.TestCase):
         result= frutasOmarSalgado.frutas('manzana')
         self.assertEqual(result,1)
 
-
+class Test_Manuel_Buritica (unittest.TestCase):
+    #Escribimos un metodo:
+    def testEntrada (self):
+        result= ManuelBuritica.entrada(21, 50000)
+        self.assertEqual(result,1)
 
 if __name__ == '__main__':
     unittest.main()

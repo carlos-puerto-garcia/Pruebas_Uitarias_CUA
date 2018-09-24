@@ -33,3 +33,18 @@ class Test_Manuel_Buritica (unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 
+#clase sebastian yepes pares e impares:
+
+import SEBASTIAN_YEPES
+import unittest
+
+class Test_ejemplo_sebastian (unittest.TestCase):
+    
+    def test_par_impar (self):
+        result=SEBASTIAN_YEPES.par_impares(2)
+        self.assertEqual(result,1)
+
+if __name__ == '__main__':
+    unittest.main()
+    
+

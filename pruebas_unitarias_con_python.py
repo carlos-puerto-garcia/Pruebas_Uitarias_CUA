@@ -1,6 +1,7 @@
 import ejemplo
 import frutasOmarSalgado
 import ManuelBuritica
+import SEBASTIAN_YEPES
 import unittest
 
 
@@ -34,9 +35,6 @@ if __name__ == '__main__':
     unittest.main()
 
 #clase sebastian yepes pares e impares:
-
-import SEBASTIAN_YEPES
-import unittest
 
 class Test_ejemplo_sebastian (unittest.TestCase):
     

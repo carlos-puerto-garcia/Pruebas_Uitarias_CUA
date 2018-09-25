@@ -2,6 +2,7 @@ import ejemplo
 import frutasOmarSalgado
 import ManuelBuritica
 import SEBASTIAN_YEPES
+import factorialDiegoHerrera
 import unittest
 
 
@@ -31,8 +32,7 @@ class Test_Manuel_Buritica (unittest.TestCase):
         result= ManuelBuritica.entrada(21, 50000)
         self.assertEqual(result,1)
 
-if __name__ == '__main__':
-    unittest.main()
+
 
 #clase sebastian yepes pares e impares:
 
@@ -42,6 +42,13 @@ class Test_ejemplo_sebastian (unittest.TestCase):
         result=SEBASTIAN_YEPES.par_impares(2)
         self.assertEqual(result,1)
 
+        
+class testDiegoHerrera (unittest.TestCase):
+    #Escribimos un metodo:
+    def testfactorial(self):
+        result= factorialDiegoHerrera.fact(4)
+        self.assertEqual(result,24)
+        
 if __name__ == '__main__':
     unittest.main()
     

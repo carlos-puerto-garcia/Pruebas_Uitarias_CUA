@@ -3,6 +3,8 @@ import frutasOmarSalgado
 import ManuelBuritica
 import SEBASTIAN_YEPES
 import factorialDiegoHerrera
+import JOHAN_ALVAREZ
+import JOHAN_LOPEZ
 import unittest
 
 
@@ -49,6 +51,28 @@ class testDiegoHerrera (unittest.TestCase):
         result= factorialDiegoHerrera.fact(4)
         self.assertEqual(result,24)
         
+if __name__ == '__main__':
+    unittest.main()
+
+#clase johan alvarez
+class Test_ejemplo_triangulo (unittest.TestCase):
+    #Escribimos un metodo:
+    def test_area_triangulo (self):
+        result=JOHAN_ALVAREZ.area_triangulo(2,2)
+        self.assertEqual(result,2)
+
+if __name__ == '__main__':
+    unittest.main()
+
+
+#clase johan lopez
+
+class Test_ejemplo_calcular (unittest.TestCase):
+    #Escribimos un metodo:
+    def test_calcular (self):
+        result=JOHAN_LOPEZ.calcular(2000,2000)
+        self.assertEqual(result,40000)
+
 if __name__ == '__main__':
     unittest.main()
     

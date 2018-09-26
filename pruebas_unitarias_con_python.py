@@ -6,6 +6,7 @@ import factorialDiegoHerrera
 import JOHAN_ALVAREZ
 import JOHAN_LOPEZ
 import Andres_Suarez
+import KarinaBolivar
 import unittest
 
 '''
@@ -64,6 +65,12 @@ class Test_Andres_Suarez (unittest.TestCase):
     def testPromedio (self):
         result= Andres_Suarez.promedio(5,4.5,3.5,1)
         self.assertEqual(result,3.5)
+
+class TestKarinaBolivar (unittest.TestCase):
+    #Escribimos un metodo:
+    def testMascotas (self):
+        result= KarinaBolivar.mascotas('pinto')
+        self.assertEqual(result,1)        
 
 if __name__ == '__main__':
     unittest.main()
